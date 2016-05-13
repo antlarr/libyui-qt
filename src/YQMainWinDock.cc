@@ -59,6 +59,9 @@ YQMainWinDock::YQMainWinDock()
     resize( YQUI::ui()->defaultSize( YD_HORIZ ),
 	    YQUI::ui()->defaultSize( YD_VERT  ) );
 
+    if ( YQUI::ui()->fullscreen() )
+	activateWindow();
+
     yuiDebug() << "MainWinDock initial size: "
 	       << size().width() << " x " << size().height()
 	       << std::endl;
