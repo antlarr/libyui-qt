@@ -176,6 +176,7 @@ YQWizard::YQWizard( YWidget *		parent,
         YQMainWinDock::mainWinDock()->resizeVisibleChild();
     }
 
+    topLevelWidget()->activateWindow();
 }
 
 
